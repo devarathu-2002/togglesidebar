@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            display:block;
+            line-height: 30px;
+            margin-left:5px;
+            text-decoration:none;
+            color:white;
+            padding:10px;
+           
+            
+        }
+        #n2{
+            margin-top:200px;
+        }
+        div{
+            height:100%;
+            background-color: black;
+            position: fixed;
+            left:0;
+            top:0;
+            width:20%;
+        }
+        #n4{
+            margin-left:350px;
+            width:150px;
+            height:150px;
+            color:pink;
+            background-color: blue;
+        }
+       
+    </style>
+<script>
+    function get(){
+        var a1=document.getElementById("n1");
+        a1.style.left = a1.style.left === '0px' ? '-300px' : '0px';
+    }
+    </script>
+</head>
+<body>
+<div id="n1">
+    <a href="#" id="n2">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</div> 
+<input  type="submit" value="Toggle Sidebar" onclick="get()" id="n4">
+   
+
+
+</body>
+</html>
